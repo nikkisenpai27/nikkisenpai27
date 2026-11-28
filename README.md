@@ -1,4 +1,7 @@
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,2,24&height=260&section=header&text=NIKKI%20SENPAI&fontSize=72&fontColor=A9FEF7&fontAlign=50&fontAlignY=42&animation=fadeIn&desc=%E6%9C%AA%E6%9D%A5%E3%81%B8%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20%2F%2F%20ACCESSING%20THE%20FUTURE&descSize=20&descColor=FE428E&descAlignY=64&stroke=FE428E&strokeWidth=1" width="100%" alt="NIKKI SENPAI" />
+
+<div align="center">
   <img src="https://readme-svg-typing-generator.vercel.app/api?lines=こんにちは、Nikki+Senpai+です+👋;Aspiring+Software+Engineer;Future+IT+Developer+in+Japan;Coding+since+2020+%7C+Google+%26+Harvard;Discipline+is+my+boost.;スキルを磨きながら、テクノロジーでインドと日本を繋ぐ。&animation=rainbow&size=26&duration=3200&pause=1000&center=true&vCenter=true&width=850&height=110&font=Fira+Code" alt="Rainbow Typing Animation"/>
 </div>
 
