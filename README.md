@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="banner.svg" alt="NIKKI SENPAI — matrix banner" width="100%" />
+</div>
 
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
 
