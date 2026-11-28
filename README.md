@@ -10,16 +10,17 @@
 
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
 
-<br/>
-<img src="https://img.shields.io/badge/SYSTEM-ONLINE-A9FEF7?style=for-the-badge&labelColor=141321&logo=statuspage&logoColor=A9FEF7" />
-<img src="https://img.shields.io/badge/BASE-INDIA%20%E2%87%84%20JAPAN-FE428E?style=for-the-badge&labelColor=141321" />
-<img src="https://img.shields.io/badge/MODE-LEARNING-F8D847?style=for-the-badge&labelColor=141321&logo=gitbook&logoColor=F8D847" />
-<img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-05FFA1?style=for-the-badge&labelColor=141321" />
-<br/><br/>
- 
-<img src="https://img.shields.io/badge/-English-2b6cb0?style=for-the-badge&logo=googletranslate&logoColor=white" />
-<img src="https://img.shields.io/badge/-日本語-c53030?style=for-the-badge&logo=googletranslate&logoColor=white" />
-<br/><br/>
+<div align="center">
+  
+![SYSTEM](https://img.shields.io/badge/SYSTEM-ONLINE-A9FEF7?style=for-the-badge&labelColor=141321&logo=statuspage&logoColor=A9FEF7)
+![BASE](https://img.shields.io/badge/BASE-INDIA%20%2F%20JAPAN-FE428E?style=for-the-badge&labelColor=141321)
+![MODE](https://img.shields.io/badge/MODE-LEARNING-F8D847?style=for-the-badge&labelColor=141321&logo=gitbook&logoColor=F8D847)
+![STATUS](https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-05FFA1?style=for-the-badge&labelColor=141321)
+
+![English](https://img.shields.io/badge/-English-2b6cb0?style=for-the-badge&logo=googletranslate&logoColor=white)
+![日本語](https://img.shields.io/badge/-%E6%97%A5%E6%9C%AC%E8%AA%9E-c53030?style=for-the-badge&logo=googletranslate&logoColor=white)
+
+</div>
 
 <img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" />
 
