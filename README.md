@@ -173,11 +173,7 @@ Open to **collaborations**, **internships**, and **opportunities**.
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
 
 <div align="center">
-
-## 📊 Contribution Status
-
-<img src="./contributions.svg" alt="Nikki Senpai - GitHub Contribution Status" width="100%">
-
+  <img src="./contribution.svg" alt="GitHub Contribution Status" width="100%">
 </div>
 
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
