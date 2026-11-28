@@ -1,0 +1,454 @@
+<div align="center">
+
+<svg width="100%" height="auto" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" style="max-width:1200px;border-radius:32px;display:block;margin:0 auto;">
+  <defs>
+    <radialGradient id="bgGlow" cx="20%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1a1526"/>
+      <stop offset="100%" stop-color="#0a0810"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6"/>
+    </radialGradient>
+
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4a7ff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="nikkiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="50%" stop-color="#c4a7ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+
+    <linearGradient id="senpaiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4a7ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <!-- shimmer -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- matrix rain stream gradient -->
+    <linearGradient id="matrixStream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4a7ff" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#c4a7ff" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#f3e8ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f3e8ff" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- horizontal scan glitch gradient -->
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c4a7ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f3e8ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c4a7ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="matrixGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#c4a7ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="diag" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#c4a7ff" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
+
+    <!-- clip to banner rounded rect -->
+    <clipPath id="bannerClip">
+      <rect width="1200" height="300" rx="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- ===== BACKGROUND LAYERS ===== -->
+  <rect width="1200" height="300" rx="32" fill="url(#bgGlow)"/>
+  <rect width="1200" height="300" rx="32" fill="url(#grid)"/>
+  <rect width="1200" height="300" rx="32" fill="url(#diag)"/>
+
+  <!-- ===== MATRIX RAIN LAYER (clipped) ===== -->
+  <g clip-path="url(#bannerClip)" font-family="'Courier New',monospace" font-size="12" font-weight="700" filter="url(#matrixGlow)">
+
+    <!-- Column 1 -->
+    <text x="30" y="0" fill="url(#matrixStream)" opacity="0.55">
+      <tspan x="30" dy="0">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan><tspan x="30" dy="14">1</tspan><tspan x="30" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 2 -->
+    <text x="70" y="0" fill="url(#matrixStream)" opacity="0.4">
+      <tspan x="70" dy="0">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan><tspan x="70" dy="14">0</tspan><tspan x="70" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="9s" begin="1.2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 3 -->
+    <text x="120" y="0" fill="url(#matrixStream)" opacity="0.5">
+      <tspan x="120" dy="0">1</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan><tspan x="120" dy="14">0</tspan><tspan x="120" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 4 -->
+    <text x="165" y="0" fill="url(#matrixStream)" opacity="0.35">
+      <tspan x="165" dy="0">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan><tspan x="165" dy="14">1</tspan><tspan x="165" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="10s" begin="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 5 -->
+    <text x="215" y="0" fill="url(#matrixStream)" opacity="0.55">
+      <tspan x="215" dy="0">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="8s" begin="0.8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 6 (behind name, dimmer) -->
+    <text x="265" y="0" fill="url(#matrixStream)" opacity="0.22">
+      <tspan x="265" dy="0">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan><tspan x="265" dy="14">0</tspan><tspan x="265" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="11s" begin="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 7 (dim behind name) -->
+    <text x="320" y="0" fill="url(#matrixStream)" opacity="0.18">
+      <tspan x="320" dy="0">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan><tspan x="320" dy="14">0</tspan><tspan x="320" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="9.5s" begin="1.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 8 (behind name) -->
+    <text x="375" y="0" fill="url(#matrixStream)" opacity="0.2">
+      <tspan x="375" dy="0">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">1</tspan><tspan x="375" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7.5s" begin="2.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 9 (behind name) -->
+    <text x="430" y="0" fill="url(#matrixStream)" opacity="0.16">
+      <tspan x="430" dy="0">1</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan><tspan x="430" dy="14">1</tspan><tspan x="430" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="10s" begin="0.3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 10 (behind name) -->
+    <text x="485" y="0" fill="url(#matrixStream)" opacity="0.18">
+      <tspan x="485" dy="0">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan><tspan x="485" dy="14">0</tspan><tspan x="485" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="8.5s" begin="1.8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 11 (behind SENPAI, dimmer) -->
+    <text x="545" y="0" fill="url(#matrixStream)" opacity="0.15">
+      <tspan x="545" dy="0">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">1</tspan><tspan x="545" dy="14">0</tspan><tspan x="545" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="11s" begin="0.9s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 12 (behind SENPAI) -->
+    <text x="600" y="0" fill="url(#matrixStream)" opacity="0.15">
+      <tspan x="600" dy="0">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan><tspan x="600" dy="14">1</tspan><tspan x="600" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="9s" begin="2.2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 13 (behind SENPAI end) -->
+    <text x="655" y="0" fill="url(#matrixStream)" opacity="0.2">
+      <tspan x="655" dy="0">1</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan><tspan x="655" dy="14">0</tspan><tspan x="655" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7.8s" begin="1.2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 14 -->
+    <text x="710" y="0" fill="url(#matrixStream)" opacity="0.45">
+      <tspan x="710" dy="0">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan><tspan x="710" dy="14">1</tspan><tspan x="710" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="6.5s" begin="0.2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 15 -->
+    <text x="760" y="0" fill="url(#matrixStream)" opacity="0.5">
+      <tspan x="760" dy="0">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">1</tspan><tspan x="760" dy="14">0</tspan><tspan x="760" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="8s" begin="1.8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 16 -->
+    <text x="815" y="0" fill="url(#matrixStream)" opacity="0.55">
+      <tspan x="815" dy="0">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan><tspan x="815" dy="14">1</tspan><tspan x="815" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7s" begin="0.6s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 17 -->
+    <text x="865" y="0" fill="url(#matrixStream)" opacity="0.45">
+      <tspan x="865" dy="0">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan><tspan x="865" dy="14">1</tspan><tspan x="865" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="10s" begin="2.8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 18 -->
+    <text x="915" y="0" fill="url(#matrixStream)" opacity="0.5">
+      <tspan x="915" dy="0">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan><tspan x="915" dy="14">1</tspan><tspan x="915" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7.5s" begin="1.1s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 19 -->
+    <text x="965" y="0" fill="url(#matrixStream)" opacity="0.55">
+      <tspan x="965" dy="0">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan><tspan x="965" dy="14">0</tspan><tspan x="965" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="8.5s" begin="0.4s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 20 -->
+    <text x="1015" y="0" fill="url(#matrixStream)" opacity="0.5">
+      <tspan x="1015" dy="0">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">1</tspan><tspan x="1015" dy="14">0</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="9s" begin="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 21 -->
+    <text x="1065" y="0" fill="url(#matrixStream)" opacity="0.45">
+      <tspan x="1065" dy="0">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan><tspan x="1065" dy="14">0</tspan><tspan x="1065" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="7s" begin="1.6s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 22 -->
+    <text x="1115" y="0" fill="url(#matrixStream)" opacity="0.4">
+      <tspan x="1115" dy="0">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">0</tspan><tspan x="1115" dy="14">1</tspan><tspan x="1115" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="10s" begin="0.7s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Column 23 -->
+    <text x="1165" y="0" fill="url(#matrixStream)" opacity="0.35">
+      <tspan x="1165" dy="0">1</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan><tspan x="1165" dy="14">0</tspan><tspan x="1165" dy="14">1</tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 300" dur="6.8s" begin="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ===== HORIZONTAL SCANLINES / GLITCH LINES ===== -->
+  <g clip-path="url(#bannerClip)">
+    <rect x="0" y="0" width="1200" height="2" fill="url(#scanGrad)" opacity="0.6">
+      <animate attributeName="y" values="0;300;0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="1200" height="1" fill="url(#scanGrad)" opacity="0.4">
+      <animate attributeName="y" values="0;300;0" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="1200" height="1.5" fill="url(#scanGrad)" opacity="0.5">
+      <animate attributeName="y" values="300;0;300" dur="7s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="1200" height="1" fill="url(#scanGrad)" opacity="0.3">
+      <animate attributeName="y" values="0;300;0" dur="9s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- corner orbs -->
+  <circle cx="1050" cy="40" r="180" fill="url(#orbGlow)">
+    <animate attributeName="r" values="180;210;180" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.7;1" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="280" r="160" fill="url(#orbGlow2)">
+    <animate attributeName="r" values="160;185;160" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect width="1200" height="300" rx="32" fill="url(#vignette)" pointer-events="none"/>
+  <rect width="1200" height="300" rx="32" fill="none" stroke="#c4a7ff" stroke-opacity="0.22" stroke-width="1.5"/>
+
+  <!-- constellation -->
+  <g stroke="#c4a7ff" stroke-opacity="0.15" stroke-width="1">
+    <line x1="150" y1="60" x2="300" y2="250">
+      <animate attributeName="stroke-opacity" values="0.05;0.25;0.05" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="250" x2="600" y2="50">
+      <animate attributeName="stroke-opacity" values="0.05;0.2;0.05" dur="5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="600" y1="50" x2="820" y2="130">
+      <animate attributeName="stroke-opacity" values="0.05;0.25;0.05" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="820" y1="130" x2="1000" y2="220">
+      <animate attributeName="stroke-opacity" values="0.05;0.2;0.05" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="450" y1="280" x2="820" y2="130">
+      <animate attributeName="stroke-opacity" values="0.05;0.18;0.05" dur="5.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- floating particles -->
+  <circle cx="150" cy="60" r="2.5" fill="#e9d5ff" opacity="0.9" filter="url(#glow)">
+    <animate attributeName="cy" values="60;40;60" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="220" r="2" fill="#c4a7ff" opacity="0.7" filter="url(#glow)">
+    <animate attributeName="cy" values="220;200;220" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="130" r="3" fill="#f3e8ff" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="cy" values="130;110;130" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="250" r="2" fill="#c4a7ff" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="cy" values="250;230;250" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="50" r="2" fill="#e9d5ff" opacity="0.7" filter="url(#glow)">
+    <animate attributeName="cy" values="50;30;50" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="600;612;600" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="280" r="2.5" fill="#c4a7ff" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="cy" values="280;262;280" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ================= TOP-LEFT LANGUAGES (4) ================= -->
+  <g font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600">
+    <g>
+      <rect x="30" y="22" width="86" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="30" y="22" width="86" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="48" y="42" fill="#e9d5ff">☕ Java</text>
+    </g>
+    <g>
+      <rect x="124" y="22" width="100" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="124" y="22" width="100" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="142" y="42" fill="#e9d5ff">🐍 Python</text>
+    </g>
+    <g>
+      <rect x="232" y="22" width="124" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="232" y="22" width="124" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="250" y="42" fill="#e9d5ff">🟦 TypeScript</text>
+    </g>
+    <g>
+      <rect x="364" y="22" width="92" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="364" y="22" width="92" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="382" y="42" fill="#e9d5ff">⚙️ C++</text>
+    </g>
+  </g>
+
+  <!-- ================= TOP-RIGHT LANGUAGES (4 + chip) ================= -->
+  <g font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600">
+    <g>
+      <rect x="622" y="22" width="122" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="622" y="22" width="122" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="640" y="42" fill="#e9d5ff">⚡ JavaScript</text>
+    </g>
+    <g>
+      <rect x="752" y="22" width="96" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="752" y="22" width="96" height="30" rx="15" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.16;0" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="770" y="42" fill="#e9d5ff">🌐 HTML</text>
+    </g>
+    <g>
+      <rect x="856" y="22" width="102" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#f3e8ff" stroke-opacity="0.5"/>
+      <rect x="856" y="22" width="102" height="30" rx="15" fill="#f3e8ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.18;0" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="874" y="42" fill="#f3e8ff">🇬🇧 English</text>
+    </g>
+    <g>
+      <rect x="966" y="22" width="106" height="30" rx="15" fill="#1a1526" fill-opacity="0.88" stroke="#f3e8ff" stroke-opacity="0.5"/>
+      <rect x="966" y="22" width="106" height="30" rx="15" fill="#f3e8ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.18;0" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="984" y="42" fill="#f3e8ff">🇯🇵 Japanese</text>
+    </g>
+    <g>
+      <rect x="1080" y="22" width="88" height="30" rx="15" fill="#2a1f45" fill-opacity="0.9" stroke="#f3e8ff" stroke-opacity="0.4"/>
+      <text x="1097" y="42" fill="#f3e8ff">日本語</text>
+    </g>
+  </g>
+
+  <!-- ================= MAIN NAME ================= -->
+  <g filter="url(#glow)">
+    <text x="100" y="165" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+          font-size="90" font-weight="800" letter-spacing="-2"
+          fill="url(#nikkiGrad)">NIKKI</text>
+    <text x="100" y="165" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+          font-size="90" font-weight="800" letter-spacing="-2"
+          fill="url(#shimmer)" opacity="0.9">NIKKI</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="390" y="165" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+          font-size="74" font-weight="800" letter-spacing="-1"
+          fill="url(#senpaiGrad)">SENPAI</text>
+    <text x="390" y="165" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+          font-size="74" font-weight="800" letter-spacing="-1"
+          fill="url(#shimmer)" opacity="0.9">SENPAI</text>
+  </g>
+
+  <line x1="100" y1="182" x2="700" y2="182" stroke="#c4a7ff" stroke-opacity="0.35" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.15;0.5;0.15" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- subtitle -->
+  <rect x="100" y="196" width="4" height="32" fill="#a78bfa" rx="2">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="122" y="221" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+        font-size="19" font-weight="400" letter-spacing="6"
+        fill="#c4a7ff" opacity="0.92">
+    ✦ CODE · DESIGN · CREATE ✦
+    <animate attributeName="opacity" values="0.92;0.55;0.92" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="122" y="248" font-family="'Inter','Segoe UI',system-ui,sans-serif"
+        font-size="12" font-weight="500" letter-spacing="3"
+        fill="#a78bfa" opacity="0.65">EN · 日本語 · 中文友好</text>
+
+  <!-- bottom-right role badges -->
+  <g font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="500">
+    <g>
+      <rect x="880" y="228" width="120" height="38" rx="19" fill="#1a1526" fill-opacity="0.85" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="880" y="228" width="120" height="38" rx="19" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.14;0" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="903" y="253" fill="#e9d5ff">⚡ Dev</text>
+    </g>
+    <g>
+      <rect x="1012" y="228" width="108" height="38" rx="19" fill="#1a1526" fill-opacity="0.85" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="1012" y="228" width="108" height="38" rx="19" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.14;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+      <text x="1033" y="253" fill="#e9d5ff">🎨 UI/UX</text>
+    </g>
+    <g>
+      <rect x="1132" y="228" width="98" height="38" rx="19" fill="#1a1526" fill-opacity="0.85" stroke="#c4a7ff" stroke-opacity="0.4"/>
+      <rect x="1132" y="228" width="98" height="38" rx="19" fill="#c4a7ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.14;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="1153" y="253" fill="#e9d5ff">🚀 Ship</text>
+    </g>
+  </g>
+
+  <!-- corner sparkles -->
+  <g fill="#f3e8ff">
+    <circle cx="30" cy="290" r="1.5" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1170" cy="12" r="1.8" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1170" cy="290" r="1.4" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
+
+</div>
