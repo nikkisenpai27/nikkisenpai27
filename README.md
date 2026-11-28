@@ -172,12 +172,12 @@ Open to **collaborations**, **internships**, and **opportunities**.
 
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
 
-## 📊 GitHub Stats
 <div align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=nikkisenpai27&theme=radical&hide_border=false&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats"/>
-  <img src="https://streak-stats.demolab.com/?user=nikkisenpai27&theme=radical&hide_border=false&timezone=Asia/Tokyo&starting_year=2020" height="165" alt="GitHub Streak"/>
-  <br/>
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=nikkisenpai27&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="165" alt="Top Languages"/>
+
+## 📊 Contribution Status
+
+<img src="./contributions.svg" alt="Nikki Senpai - GitHub Contribution Status" width="100%">
+
 </div>
 
 <div align="center"><img src="https://www.gitskins.com/api/readme-reference/divider?username=torvalds&theme=neon&v=readme-reference-2" width="100%" alt="Section divider" /></div>
